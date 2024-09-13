@@ -1,0 +1,133 @@
+/* ========== Root Variables ========== */
+:root{
+    /* ======== Color ======== */
+    --body-color: #FEFEFE;
+    --primary-color : #F28500;
+    --secondary-color: #f8e8d4ae ;
+    --text-color : #363636;
+    --heading-text-color : #06080E;
+
+    --box-shadow : 0 0 8px #F28500;
+
+    /* ======== Container Width ======== */
+    --container-width-lg : 83%;
+    --container-width-md: 85%;
+    --container-width-sm: 90%;
+
+    /* ======== Font Weight ======== */
+    --fw-normal : 400;
+    --fw-medium : 500;
+    --fw-semibold : 600;
+    --fw-bold : 700;
+
+    /* ======== Z Index ======== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    /* ======== Font Size ======== */
+    --h1-font : 2rem;
+    --h2-font : 1.5rem;
+    --h3-font : 1.25rem;
+    --normal-font: 1rem;
+    --small-font: 0.9rem;
+    --smaller-font: 0.813rem;
+    --tiny-font: 0.625rem;
+}
+
+/* ======== Default ======== */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+body, button, input, textarea{
+    font-family: "Poppins", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.section{
+    padding: 4rem 0;
+}
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--body-color);
+    padding: .6rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: var(--fw-medium);
+    font-size: var(--normal-font);
+
+    transition: ease .3s;
+}
+
+.button:hover{
+    box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width : 1280px){
+    .container{
+        width: 88%;
+    }
+}
+
+@media screen and (max-width : 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+}
